@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body class="paginaPropiedades">
+    <div class="Position">
+        <h1>Position</h1>
+        <div class="static">Static (por defecto)</div>
+        <div class="relative">Relative (movido desde su posición original)</div>
+        <div class="absolute">Absolute (posicionado respecto al contenedor padre)</div>
+        <div class="fixed">Fixed <a href="index.html">Regresar</a></div>
+  
+    </div>
+
+    <div class="FloatYclear">
+        <h1>Float y Clear</h1>
+        <div class="contenedor">
+            <img src="images/city.jpeg" alt="Imagen Flotante" class="float-left">
+            <p class="texto">Este texto rodea la imagen usando float.</p>
+        </div>
+    
+        <div class="contenedor">
+            <img src="images/hood.jpeg" alt="Otra imagen" class="float-right">
+            <p class="texto">Este texto también rodea la imagen pero flotando a la derecha.</p>
+        </div>
+    
+        <div class="clear-div">Este bloque aparece correctamente después de los elementos flotantes.</div>
+    </div>
+    <div class="Display">
+        <h1>Display</h1>
+        <div class="block">Este es un elemento block</div>
+        <span class="inline">Este es un elemento inline</span>
+        <span class="inline-block">Este elemento es inline-block</span>
+        <div class="none">Este elemento está oculto</div>  
+    
+    </div>
+    <div class="OverFlow">
+        <h1>OverFlow</h1>
+        <div class="visible">
+            <p>Este es un texto largo dentro de un div con overflow: visible. Aunque el contenido excede el tamaño del contenedor, seguirá mostrándose fuera de sus límites.</p>
+        </div>
+    
+        <div class="hidden">
+            <p>Este es un texto largo dentro de un div con overflow: hidden. Como el contenido excede el tamaño del contenedor, se oculta la parte que no cabe.</p>
+        </div>
+    
+        <div class="scroll">
+            <p>Este es un texto largo dentro de un div con overflow: scroll. Se agregará una barra de desplazamiento para que puedas ver el contenido completo dentro del contenedor.</p>
+        </div>
+    
+        <div class="auto">
+            <p>Este es un texto largo dentro de un div con overflow: auto. Se mostrará una barra de desplazamiento solo si el contenido lo necesita.</p>
+        </div>
+    </div>
+    <div class="Visibility">
+        <h1>Visibility</h1>
+        <div class="visibleV">Este elemento está visible</div>
+        <div class="hiddenV">Este elemento está oculto pero aún ocupa espacio</div>
+        <button onclick="mostrarMensaje()">Mostrar mensaje oculto</button>
+    
+        <table border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+            </tr>
+            <tr id="fila-oculta" class="collapse">
+                <td>Oculto</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Visible</td>
+                <td>25</td>
+            </tr>
+        </table>
+        <script>
+            function mostrarMensaje() {
+                document.querySelector('.hiddenV').style.visibility = 'visible';
+                document.getElementById("fila-oculta").style.visibility = "visible";
+            }
+            </script>
+
+    </div>
+    <div class="zIndex">
+        <h1>Z-Index</h1>
+        <div class="caja fondo">Caja de fondo (z-index: 1)</div>
+        <div class="caja medio">Caja intermedia (z-index: 5)</div>
+        <div class="caja arriba">Caja superior (z-index: 10)</div>
+
+    </div>
+</body>
+</html>
