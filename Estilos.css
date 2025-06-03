@@ -1,0 +1,71 @@
+.Inicio{
+background-color: rgb(184, 184, 184);
+
+}
+
+.MenuInicio{
+    list-style: none;;
+    padding: 0%;
+    background-color: #555;
+    text-align: center;
+    
+}
+
+.MenuInicio li {
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.MenuInicio a {
+  color: antiquewhite;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: brown;
+  text-decoration: none;
+    
+}
+
+.MenuInicio a:hover {
+    color: coral;
+      
+  }
+/* Diseño de Cajas, Inline y bloque*/
+  .caja {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px;
+    background-color: lightblue;
+}
+
+.texto-inline {
+    display: inline;
+    padding: 5px;
+    border: 1px solid red;
+    margin: 5px;
+}
+
+.bloque {
+    display: block;
+    width: 250px;
+    padding: 15px;
+    border: 2px solid green;
+    margin: 20px auto;
+    background-color: lightgray;
+}
+
+.Regreso{
+    border: 2px solid black;
+    width: 75px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: brown;
+    position: relative;
+    right: 870px;
+}
+
+.Regreso a{
+    color: antiquewhite;
+    text-decoration: none;
+}
